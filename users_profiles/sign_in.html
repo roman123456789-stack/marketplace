@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style_for_sign.css">
+    <title>Войти</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="forText">ВХОД</div>
+        <form action="sign_in.php" class="forForm"  method="POST">
+            <input class="inputs" type="text" name="fio" placeholder="ФИО" required>    
+            <input class="inputs" type="text" name="email" placeholder="EMAIL" required>
+            <button class = "btn" type="submit">ВОЙТИ</button>
+            
+        </form>
+        <div class="sign_in" style="padding-left: 80px;">
+            <div class="btn1">Нет аккаунта?&nbsp;&nbsp;</div>
+            <button class="btn1" id="btn1" style="cursor: pointer;">Зарегистрироваться</button>
+        </div>
+        
+    </div>
+    <style>
+        .btn1{
+            font-size: 12px;
+        }
+    </style>
+    <script>
+        const btn_to_sign_in = document.getElementById("btn1");
+        btn_to_sign_in.addEventListener("click", (event)=>{
+            location.replace("/users_profiles/index.html");
+        })
+    </script>
+</body>
+</html>

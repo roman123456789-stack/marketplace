@@ -1,0 +1,143 @@
+body{
+    height: 100%;
+}
+.carousel {
+    width: 100%; /* Ширина карусели */
+    max-height: 500px; /* Максимальная высота карусели */
+    margin-left: 15px;
+}
+.carousel-inner img {
+    max-width: 100%; /* Ограничивает ширину до ширины контейнера */
+    min-width: 100%; /* Ограничивает ширину до ширины контейнера */
+    height: 450px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.marketplace-name-for-card-description{
+    margin-left: 10px;
+}
+.buy-product-now{
+    border: none;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: rgb(94, 94, 220);
+    font-weight: 700;
+    font-size: 15px;
+    height: 40px;
+    width: 90%;
+    margin-top: 11px;
+    margin-left: 5%;
+}
+.buy-product-now:hover{
+    cursor: pointer;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(60%) contrast(100%);
+}
+.wrapper-for-card-bio{
+    margin-top: 15px;
+    /* height: 500px !important; */
+    /* max-height: 500px !important; */
+}
+.card-bio{
+    margin-left: 10%;
+}
+.wrapper-for-price{
+    margin-left: 9%;
+}
+.wrapper-for-main-card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+.wrapper-for-images{
+    width: 65%;
+    height: 400px;
+}
+.wrapper-for-bio{
+    width: 30%;
+}
+@media (max-width: 700px){
+    .wrapper-for-main-card{
+        flex-direction: column;
+    }
+    .wrapper-for-images{
+        width: 100%;
+        height: 400px !important;
+    }
+    .wrapper-for-bio{
+        width: 100%;
+    }
+    .carousel {
+        margin-left: 0px;
+    }
+    .wrapper-for-main-card{
+        height: 550px;
+    }
+    .carousel-inner img {
+        height: 350px;
+    }
+}
+@media (max-width: 500px){
+    .carousel {
+        max-height: 350px !important; /* Максимальная высота карусели */
+    }
+    .carousel-inner img {
+        height: 350px !important;
+    }
+    .wrapper-for-images{
+        height: 350px;
+    }
+    .wrapper-for-card-bio{
+        height: 450px;
+    }
+    .modal-window-content{
+        height: 35% !important;
+        width: 90% !important;
+    }
+    #common-card-wrapper{
+        margin-top: 120px;
+    }
+}
+.modal-window{
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.modal-window-content{
+    display: flex; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    width: 50%;
+    height: 70%;
+    background-color: #fff;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.head-information, .order-information, .buyer-order, .point-to-delivery, .card-to-pay, .card, .wrapper-for-price, .buy-product-now{
+    margin-top: 10px;
+    text-align: center;
+}
+.head-information, .buyer-order, .point-to-delivery, .card-to-pay, .wrapper-for-price{
+    color: rgb(94, 94, 220);
+}
+.foot-pay-information{
+    color: black;
+}
+.card{
+    margin-left: 20px;
+}

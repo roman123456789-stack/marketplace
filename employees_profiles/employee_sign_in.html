@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style_for_sign.css">
+    <title>Для сотрудников</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="forText">ВХОД ДЛЯ СОТРУДНИКОВ</div>
+        <form action="employee_sign_in.php" class="forForm"  method="POST">
+            <input class="inputs" type="text" name="employee_fio" placeholder="ФИО" required>    
+            <input class="inputs" type="text" name="email" placeholder="EMAIL" required>
+            <button class = "btn" type="submit">ВОЙТИ</button>
+        </form>
+    </div>
+
+    <style>
+        .btn1{
+            font-size: 12px;
+        }
+        .forText{
+            font-size: 20px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#users_table{
+    width: 500px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+#users_table td, #users_table th{
+    border: 1px solid black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}

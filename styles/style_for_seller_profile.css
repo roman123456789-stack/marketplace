@@ -1,0 +1,164 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+input{
+    border: 0.5px solid #5d45f8;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    width: 80%;
+}
+input:focus{
+    outline-color: #5d45f8;
+}
+select{
+    border: 0.5px solid #5d45f8;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    width: 80%;
+}
+select:focus{
+    outline-color: #5d45f8;
+}
+
+label{
+    text-align: center;
+    margin: 5px;
+    width: 80%;
+}
+.header{
+    min-height: 80px;
+    background-color: #5d45f8;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    max-width: 100%;
+}
+.sellerFio{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+.inHeaderItem1{
+    margin-left: 20px;
+}
+.main{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer{
+    background-color: #5d45f8;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+}
+.formForInsertNewCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.forForm{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.btnInForm{
+    background-color: #5d45f8;
+    color: white;
+    border-radius: 15px;
+    margin: 5px;
+    height: 40px;
+    border: none;
+    outline: none;
+    width: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    font-size: 17px;
+    transition: 0.7s;
+}
+.main-for-seller-profile{
+    display: flex;
+    flex: 1;
+}
+
+#common-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#wrapper-for-card{
+    width: 200px;
+    height: 370px;
+    /* border-radius: 15px; */
+    /* border: 1px solid gray; */
+    margin: 10px;
+}
+.wrapper-for-price{
+    display: flex;
+    align-items: center;
+}
+.image{
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: rgb(204, 201, 201);
+    text-align: center;
+}
+.product-card-btn{
+    
+    border: none;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: rgb(94, 94, 220);
+    font-weight: 700;
+    font-size: 15px;
+    height: 40px;
+    width: 80%;
+    margin-top: 22px;
+}
+.price-previos{
+    color: rgb(167, 167, 167);
+    margin-left: 10px;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.price-now{
+    font-size: 20px;
+    margin-left: 7px;
+}
+.product-bio{
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 180px;
+    margin-left: 7px;
+    height: 32px;
+    max-height: 32px;
+    min-height: 32px;
+    overflow: hidden;
+}
+
+#main-for-seller-profile{
+    display: flex;
+    flex-direction: column;
+}

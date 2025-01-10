@@ -1,0 +1,357 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    padding-bottom: 100px;
+    flex: 1;
+}
+/***********************************АДАПТИВ**********************************/
+
+@media (max-width: 376px) { 
+    .search{
+        width: 150px !important;
+    }
+    .search-form{
+        width: 150px !important;
+    }
+    .footer-icon {
+        width: 30px !important;                  /* Фиксированная ширина */
+        height: 30px !important;                 /* Фиксированная высота */
+    }
+}
+
+@media (max-width: 455px) { 
+    .marketplace-name{
+        display: none;
+    }
+    #wrapper-for-card{
+        width: 120px !important;
+        height: 260px !important;
+        margin: 5px;
+    }
+    .image{
+        width: 110px !important;
+        height: 150px !important;
+    }
+
+    .product-card-btn{
+        height: 25px !important;
+        width: 110px !important;
+        margin-top: 11px !important;
+        font-size: 10px !important;
+    }
+    .product-bio{
+        font-size: 9px !important;
+        font-weight: 500 !important;
+        max-width: 150px !important;
+        height: 11px !important;
+        max-height: 11px !important;
+        min-height: 11px !important;
+    }
+    .search{
+        width: 250px;
+    }
+    .search-form{
+        width: 250px;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 480px) { 
+    #wrapper-for-card{
+        width: 150px;
+        height: 290px;
+        margin: 5px;
+    }
+    .image{
+        width: 140px;
+        height: 180px;
+    }
+
+    .product-card-btn{
+        font-size: 14px;
+        height: 25px;
+        width: 140px;
+        margin-top: 11px;
+    }
+    .header{
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .search{
+        width: 250px;
+    }
+    .search-form{
+        width: 250px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 520px) {
+    .marketplace-name{
+        display: none;
+    }
+}
+@media (max-width: 570px) { 
+    .search{
+        max-width: 300px !important;
+    }
+    .search-form{
+        width: 300px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 768px) {
+    .sign-in{
+        display: none;
+    }
+    .header{
+        min-height: 60px;
+    }
+    .search-form{
+        max-height: 35px;
+        max-width: 350px;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+    .search{
+        height: 35px;
+        max-width: 350px;
+    }
+    #wrapper-for-card{
+        width: 190px;
+        height: 360px;
+        margin: 5px;
+    }
+    .image{
+        width: 180px;
+        height: 250px;
+    }
+
+    .product-card-btn{
+        font-size: 8px;
+        height: 30px;
+        width: 180px;
+        margin-top: 11px;
+    }
+
+}
+
+/* Десктопы */
+@media (max-width: 826px) {
+    .sign-in{
+        display: none;
+    }
+    .wrapper-for-sign-in{
+        display: none;
+    }
+    .menu-in-header{
+        display: flex !important;
+    }
+}
+
+/***********************************ДЛЯ ШАПКИ**********************************/
+
+.header{
+    min-height: 120px;
+    width: 100%;
+    background-color: rgb(94, 94, 220);
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0;
+}
+.search-form{
+    max-width: 500px;
+    height: 45px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.search{
+    outline: none;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: gray;
+    font-size: 17px;
+    height: 45px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.marketplace-name{
+    padding-left: 20px;
+}
+
+.sign-in{
+    color: #b9aeae;
+    text-decoration: none;
+}
+.sign-in:hover{
+    color: #fff;
+    transition: 0.5s;
+    scale: 1.05;
+}
+.wrapper-for-sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+/***********************************ДЛЯ КАРТОЧЕК**********************************/
+
+#common-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#wrapper-for-card{
+    width: 200px;
+    height: 390px;
+    margin: 10px;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+#wrapper-for-card:hover{
+    cursor: pointer;
+}
+.a-wrapper-for-card{
+    text-decoration: none;
+}
+.a-wrapper-for-card:active{
+    color: #000; /* Цвет при нажатии на ссылку */
+}
+.wrapper-for-price{
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: rgb(204, 201, 201);
+    text-align: center;
+}
+/* ИКОНКА ВЕРИФИКАЦИИ ПРОДАВЦА */
+.verifed{
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+}
+/* НАЗВАНИЕ КОМПАНИИ ПРОДАВЦА */
+.name-company{
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 180px;
+    margin-left: 7px;
+    height: 32px;
+    max-height: 25px;
+    min-height: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.product-card-btn{
+    border: none;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: rgb(94, 94, 220);
+    font-weight: 700;
+    font-size: 15px;
+    height: 40px;
+    width: 200px;
+    margin-top: 11px;
+}
+.product-card-btn:hover{
+    cursor: pointer;
+}
+.price-previos{
+    color: rgb(167, 167, 167);
+    margin-left: 10px;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.price-now{
+    font-size: 20px;
+    margin-left: 7px;
+    color: rgb(248, 54, 24);
+    font-weight: 700;
+}
+/* ОПИСАНИЕ ТОВАРА В КАРТОЧКЕ */
+.product-bio{
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 180px;
+    margin-left: 7px;
+    height: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    overflow: hidden;
+}
+
+/* Стили для футера */
+.footer {
+    display: flex;                /* Flexbox для размещения элементов */
+    justify-content: center;      /* Центровка элементов по горизонтали */
+    align-items: center;          /* Центровка по вертикали */
+    gap: 40px;                    /* Расстояние между элементами */
+    padding: 15px;                /* Внутренние отступы */
+    background-color: rgb(94, 94, 220);       /* Темный фон футера */
+    position: fixed;              /* Фиксируем футер внизу экрана */
+    bottom: 0;
+    width: 100%;                  /* Растягиваем на всю ширину */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Тень сверху */
+}
+
+/* Стили для ссылок */
+.footer-link {
+    display: flex;                /* Убираем лишние отступы вокруг */
+    align-items: center;          /* Центрируем содержимое */
+    text-decoration: none;        /* Убираем подчеркивание */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Анимация */
+}
+
+/* Стили для изображений */
+.footer-icon {
+    width: 40px;                  /* Фиксированная ширина */
+    height: 40px;                 /* Фиксированная высота */
+    object-fit: contain;          /* Сохраняем пропорции */
+    cursor: pointer;              /* Указатель на кликабельность */
+    filter: grayscale(100%);      /* Делаем иконки черно-белыми */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Плавность */
+}
+
+/* Эффект при наведении на ссылку */
+.footer-link:hover .footer-icon {
+    filter: grayscale(0);         /* Убираем черно-белый эффект */
+    transform: scale(1.1);        /* Увеличение */
+    opacity: 0.9;                 /* Легкая прозрачность */
+}
+.menu-in-header{
+    width: 30px;
+    height: 30px;
+    display: none;
+    margin-right: 20px;
+}
